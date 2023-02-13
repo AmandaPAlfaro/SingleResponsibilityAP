@@ -6,3 +6,11 @@ C:\Users\ALVARO\source\repos\Calculadora01\Calculadora01\obj\Debug\Calculadora01
 C:\Users\ALVARO\source\repos\Calculadora01\Calculadora01\obj\Debug\Calculadora01.csproj.CoreCompileInputs.cache
 C:\Users\ALVARO\source\repos\Calculadora01\Calculadora01\obj\Debug\Calculadora01.exe
 C:\Users\ALVARO\source\repos\Calculadora01\Calculadora01\obj\Debug\Calculadora01.pdb
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Calculadora01.exe.config
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Calculadora01.exe
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Calculadora01.pdb
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\obj\Debug\Calculadora01.csproj.AssemblyReference.cache
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\obj\Debug\Calculadora01.csproj.SuggestedBindingRedirects.cache
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\obj\Debug\Calculadora01.csproj.CoreCompileInputs.cache
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\obj\Debug\Calculadora01.exe
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\obj\Debug\Calculadora01.pdb

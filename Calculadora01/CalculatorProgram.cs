@@ -38,15 +38,31 @@ namespace Calculadora01
             Console.WriteLine("------------------------");
             Console.WriteLine(resultAfterUndo);
             Console.WriteLine("------------------------");
+            Console.WriteLine("");
+            Console.WriteLine("-----------Substract-------------");
+            var subOne = new Substract(10, 2);
+            var subSecond = new Substract(subOne.Perform(), 2);
+            Console.WriteLine(subSecond.Perform());
+            Console.WriteLine("");
+            Console.WriteLine("-----------Multiply-------------");
+            var multOne = new Multiply(6, 2);
+            var multSecond = new Multiply(multOne.Perform(), 2);
+            Console.WriteLine(multSecond.Perform());
+            Console.WriteLine("");
+            Console.WriteLine("-----------Divide-------------");
+            var dividetOne = new Divide(20, 2);
+            var divideSecond = new Divide(dividetOne.Perform(), 2);
+            Console.WriteLine(divideSecond.Perform());
 
 
-            var respSum = calculatorProgram.Sum(1, 2);
-            respSum = calculatorProgram.Sum(respSum, 8);
-            respSum = calculatorProgram.Sum(respSum, 9);
 
-            var respSubstract = calculatorProgram.Substract(4, 2);
-            var respMultiply = calculatorProgram.Multiply(3, 7);
-            var respDivide = calculatorProgram.Divide(3, 2);
+            //var respSum = calculatorProgram.Sum(1, 2);
+            //respSum = calculatorProgram.Sum(respSum, 8);
+            //respSum = calculatorProgram.Sum(respSum, 9);
+
+            //var respSubstract = calculatorProgram.Substract(4, 2);
+            //var respMultiply = calculatorProgram.Multiply(3, 7);
+            //var respDivide = calculatorProgram.Divide(3, 2);
         }
     }
 }

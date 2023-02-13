@@ -20,7 +20,7 @@ namespace Calculadora01
 
         public int Perform()
         {
-            resultSum = firstNumber / secondNumber;
+            resultSum = (firstNumber / secondNumber);
             return resultSum;
         }
     }
