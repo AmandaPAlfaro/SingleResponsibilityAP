@@ -6,11 +6,33 @@ C:\Users\ALVARO\source\repos\Calculadora01\Calculadora01\obj\Debug\Calculadora01
 C:\Users\ALVARO\source\repos\Calculadora01\Calculadora01\obj\Debug\Calculadora01.csproj.CoreCompileInputs.cache
 C:\Users\ALVARO\source\repos\Calculadora01\Calculadora01\obj\Debug\Calculadora01.exe
 C:\Users\ALVARO\source\repos\Calculadora01\Calculadora01\obj\Debug\Calculadora01.pdb
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
 E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Calculadora01.exe.config
 E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Calculadora01.exe
 E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Calculadora01.pdb
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\it\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 E:\New Class 2023\SingleResponsibilityAP\Calculadora01\obj\Debug\Calculadora01.csproj.AssemblyReference.cache
 E:\New Class 2023\SingleResponsibilityAP\Calculadora01\obj\Debug\Calculadora01.csproj.SuggestedBindingRedirects.cache
 E:\New Class 2023\SingleResponsibilityAP\Calculadora01\obj\Debug\Calculadora01.csproj.CoreCompileInputs.cache
+E:\New Class 2023\SingleResponsibilityAP\Calculadora01\obj\Debug\Calculadora01.csproj.CopyComplete
 E:\New Class 2023\SingleResponsibilityAP\Calculadora01\obj\Debug\Calculadora01.exe
 E:\New Class 2023\SingleResponsibilityAP\Calculadora01\obj\Debug\Calculadora01.pdb

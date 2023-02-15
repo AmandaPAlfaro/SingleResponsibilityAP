@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Calculadora01
+﻿namespace Calculadora01
 {
     public class Substract
     {
@@ -22,6 +16,11 @@ namespace Calculadora01
         {
             resultSum = firstNumber - secondNumber;
             return resultSum;
+        }
+
+        public int Undo()
+        {
+            return resultSum + secondNumber;
         }
     }
 }

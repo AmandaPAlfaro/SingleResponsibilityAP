@@ -1,37 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculadora01
 {
     internal class CalculatorProgram
     {
-        public int Sum(int firstnumber, int secondNumber) 
+        public int Sum(int firstName, int secondNumber) 
         {
-            return firstnumber + secondNumber;   
+            return firstName + secondNumber;   
         }
-        public int Substract(int firstnumber, int secondNumber)
+        public int Substract(int firstNumber, int secondNumber)
         {
-            return firstnumber - secondNumber;
+            return firstNumber - secondNumber;
         }
-        public int Multiply(int firstnumber, int secondNumber)
+        public int Multiply(int firstNumber, int secondNumber)
         {
-            return firstnumber * secondNumber;
+            return firstNumber * secondNumber;
         }
-        public int Divide(int firstnumber, int secondNumber)
+        public int Divide(int firstNumber, int secondNumber)
         {
-            return firstnumber / secondNumber;
+            return firstNumber  / secondNumber;
         }
 
         static void Main(string[] args)
         {
             var calculatorProgram = new CalculatorProgram();
 
-            var sumOne = new Sum(1, 2);
-            var sumSecond = new Sum(sumOne.Perform(), 8);
-            var sumThird = new Sum(sumSecond.Perform(), 9);
+            var firstSum = new Sum(1, 2);
+            var secondSum = new Sum(firstSum.Perform(), 8);
+            var sumThird = new Sum(secondSum.Perform(), 9);
             Console.WriteLine(sumThird.Perform());
             var resultAfterUndo = sumThird.Undo();
 
@@ -40,29 +36,31 @@ namespace Calculadora01
             Console.WriteLine("------------------------");
             Console.WriteLine("");
             Console.WriteLine("-----------Substract-------------");
-            var subOne = new Substract(10, 2);
-            var subSecond = new Substract(subOne.Perform(), 2);
-            Console.WriteLine(subSecond.Perform());
+            var firstSubstract = new Substract(10, 2);
+            var secondSubstract= new Substract(firstSubstract.Perform(), 2);
+            Console.WriteLine(secondSubstract.Perform());
+
             Console.WriteLine("");
             Console.WriteLine("-----------Multiply-------------");
-            var multOne = new Multiply(6, 2);
-            var multSecond = new Multiply(multOne.Perform(), 2);
-            Console.WriteLine(multSecond.Perform());
+            var firstMultiply = new Multiply(6, 2);
+            var secondMultiply = new Multiply(firstMultiply.Perform(), 2);
+            Console.WriteLine(secondMultiply.Perform());
+
             Console.WriteLine("");
             Console.WriteLine("-----------Divide-------------");
-            var dividetOne = new Divide(20, 2);
-            var divideSecond = new Divide(dividetOne.Perform(), 2);
-            Console.WriteLine(divideSecond.Perform());
+            var firstDivide = new Divide(20, 2);
+            var SecondDivide = new Divide(firstDivide.Perform(), 2);
+            Console.WriteLine(SecondDivide.Perform());
 
 
 
-            //var respSum = calculatorProgram.Sum(1, 2);
-            //respSum = calculatorProgram.Sum(respSum, 8);
-            //respSum = calculatorProgram.Sum(respSum, 9);
+            var respSum = calculatorProgram.Sum(1, 2);
+            respSum = calculatorProgram.Sum(respSum, 8);
+            respSum = calculatorProgram.Sum(respSum, 9);
 
-            //var respSubstract = calculatorProgram.Substract(4, 2);
-            //var respMultiply = calculatorProgram.Multiply(3, 7);
-            //var respDivide = calculatorProgram.Divide(3, 2);
+            var respSubstract = calculatorProgram.Substract(4, 2);
+            var respMultiply = calculatorProgram.Multiply(3, 7);
+            var respDivide = calculatorProgram.Divide(3, 2);
         }
     }
 }
