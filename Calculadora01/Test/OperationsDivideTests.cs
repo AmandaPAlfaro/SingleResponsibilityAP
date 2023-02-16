@@ -9,8 +9,8 @@ namespace Calculadora01.Test
         public void VerifyDivideOfPositiveNumbers()
         {
             var expectedDivide = 5;
-            var firstNumber = 2;
-            var secondNumber = 10;
+            var firstNumber = 10;
+            var secondNumber = 2;
 
             var resultOfDivide = new Divide(firstNumber, secondNumber).Perform();
 
@@ -21,8 +21,8 @@ namespace Calculadora01.Test
         public void VerifyDivideOfNegativeNumbers()
         {
             var expectedDivide = 5;
-            var firstNumber = -2;
-            var secondNumber = -10;
+            var firstNumber = -10;
+            var secondNumber = -2;
 
             var resultOfDivide = new Divide(firstNumber, secondNumber).Perform();
 
@@ -33,8 +33,8 @@ namespace Calculadora01.Test
         public void VerifyDivideOfNegativeAndPositiveNumbers()
         {
             var expectedDivide = -5;
-            var firstNumber = 2;
-            var secondNumber = -10;
+            var firstNumber = 10;
+            var secondNumber = -2;
 
             var resultOfDivide = new Divide(firstNumber, secondNumber).Perform();
 
@@ -46,8 +46,8 @@ namespace Calculadora01.Test
         {
             var expectedUndo = 2;
             var expectedDivide = 5;
-            var firstNumber = 2;
-            var secondNumber = 10;
+            var firstNumber = 10;
+            var secondNumber = 2;
 
             var divideToTest = new Divide(firstNumber, secondNumber);
             var resultOfDivide = divideToTest.Perform();
