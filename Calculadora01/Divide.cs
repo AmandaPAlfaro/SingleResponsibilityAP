@@ -4,7 +4,7 @@
     {
         public int firstNumber;
         public int secondNumber;
-        public int resultSum;
+        public int result;
 
         public Divide(int firstNumber, int secondNumber)
         {
@@ -14,13 +14,13 @@
 
         public int Perform()
         {
-            resultSum = (firstNumber / secondNumber);
-            return resultSum;
+            result = (firstNumber / secondNumber);
+            return result;
         }
 
         public int Undo()
         {
-            return resultSum * secondNumber;
+            return result * secondNumber;
         }
     }
 }
