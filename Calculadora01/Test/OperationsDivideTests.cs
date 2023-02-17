@@ -44,12 +44,12 @@ namespace Calculadora01.Test
         [TestMethod]
         public void VerifyUndoOfDivideOfPositiveNumbers()
         {
-            var expectedUndo = 2;
+            var expectedUndo = 10;
             var expectedDivide = 5;
-            var firstNumber = 10;
-            var secondNumber = 2;
+            var number1 = 10;
+            var number2 = 2;
 
-            var divideToTest = new Divide(firstNumber, secondNumber);
+            var divideToTest = new Divide(number1, number2);
             var resultOfDivide = divideToTest.Perform();
             var resultOfUndo = divideToTest.Undo();
 

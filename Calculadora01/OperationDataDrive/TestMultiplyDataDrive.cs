@@ -13,7 +13,7 @@ namespace Calculadora01.OperationDataDrive
                 return new[]
                 {
                     new object[] {6, 4, 24},
-                    new object[] {-4, -2, -8},
+                    new object[] {-4, -2, 8},
                     new object[] {-8, 2, -16},
                     new object[] {2, -4, -8},
                     new object[] {0, 8, 0},

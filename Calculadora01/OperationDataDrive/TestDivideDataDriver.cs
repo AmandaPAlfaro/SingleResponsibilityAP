@@ -13,10 +13,9 @@ namespace Calculadora01.OperationDataDrive
                 return new[]
                 {
                     new object[] {4, 2, 2},
-                    new object[] {-8, -2, -4},
-                    new object[] {-10, 2, 5},
+                    new object[] {-8, -2, 4},
+                    new object[] {-10, 2, -5},
                     new object[] {4, -2, -2},
-                    new object[] {0, 0, 0},
                 };
             }
         }
