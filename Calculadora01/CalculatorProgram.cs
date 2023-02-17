@@ -2,23 +2,23 @@
 
 namespace Calculadora01
 {
-    internal class CalculatorProgram
+    public class CalculatorProgram
     {
-        public int Sum(int firstName, int secondNumber) 
+        public int Sum(int number1, int number2) 
         {
-            return firstName + secondNumber;   
+            return number1 + number2;   
         }
-        public int Substract(int firstNumber, int secondNumber)
+        public int Substract(int number1, int number2)
         {
-            return firstNumber - secondNumber;
+            return number1 - number2;
         }
-        public int Multiply(int firstNumber, int secondNumber)
+        public int Multiply(int number1, int number2)
         {
-            return firstNumber * secondNumber;
+            return number1 * number2;
         }
-        public int Divide(int firstNumber, int secondNumber)
+        public int Divide(int number1, int number2)
         {
-            return firstNumber  / secondNumber;
+            return number1  / number2;
         }
 
         static void Main(string[] args)

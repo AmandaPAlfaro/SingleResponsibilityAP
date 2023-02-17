@@ -2,25 +2,25 @@
 {
     public class Substract
     {
-        public int firstNumber;
-        public int secondNumber;
+        public int number1;
+        public int number2;
         public int result;
 
-        public Substract(int firstNumber, int secondNumber)
+        public Substract(int number1, int number2)
         {
-            this.firstNumber = firstNumber;
-            this.secondNumber = secondNumber;
+            this.number1 = number1;
+            this.number2 = number2;
         }
 
         public int Perform()
         {
-            result = firstNumber - secondNumber;
+            result = number1 - number2;
             return result;
         }
 
         public int Undo()
         {
-            return result + secondNumber;
+            return result + number2;
         }
     }
 }

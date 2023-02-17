@@ -9,10 +9,10 @@ namespace Calculadora01.Test
         public void VerifyMultiplyOfPositiveNumbers()
         {
             var expectedMultiply = 2;
-            var firstNumber = 1;
-            var secondNumber = 2;
+            var number1 = 1;
+            var number2 = 2;
 
-            var resultOfMultiply = new Multiply(firstNumber, secondNumber).Perform();
+            var resultOfMultiply = new Multiply(number1, number2).Perform();
 
             Assert.AreEqual(expectedMultiply, resultOfMultiply, $"The Expected result of Multiply should be {expectedMultiply} But it was: {resultOfMultiply}");
         }
@@ -22,9 +22,9 @@ namespace Calculadora01.Test
         {
             var expectedMultiply = 2;
             var firstNumber = -1;
-            var secondNumber = -2;
+            var number2 = -2;
 
-            var resultOfMultiply = new Multiply(firstNumber, secondNumber).Perform();
+            var resultOfMultiply = new Multiply(firstNumber, number2).Perform();
 
             Assert.AreEqual(expectedMultiply, resultOfMultiply, $"The Expected result of Multiply should be {expectedMultiply} But it was: {resultOfMultiply}");
         }

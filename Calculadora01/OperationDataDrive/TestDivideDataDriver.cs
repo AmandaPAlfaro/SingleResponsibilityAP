@@ -22,10 +22,10 @@ namespace Calculadora01.OperationDataDrive
 
         [TestMethod]
         [DynamicData(nameof(AdditionData))]
-        public void VerifyDivideOfTwoIntegerNumber(int firstNumber, int secondNumber, int expectedDivide)
+        public void VerifyDivideOfTwoIntegerNumber(int number1, int number2, int expectedDivide)
         {
 
-            var resultOfDivide = new Divide(firstNumber, secondNumber).Perform();
+            var resultOfDivide = new Divide(number1, number2).Perform();
             Assert.AreEqual(expectedDivide, resultOfDivide, $"The Expected result of DivideTest should be {expectedDivide} But it was: {resultOfDivide}");
         }
     }

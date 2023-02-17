@@ -9,10 +9,10 @@ namespace Calculadora01.Test
         public void VerifyDivideOfPositiveNumbers()
         {
             var expectedDivide = 5;
-            var firstNumber = 10;
-            var secondNumber = 2;
+            var number1 = 10;
+            var number2 = 2;
 
-            var resultOfDivide = new Divide(firstNumber, secondNumber).Perform();
+            var resultOfDivide = new Divide(number1, number2).Perform();
 
             Assert.AreEqual(expectedDivide, resultOfDivide, $"The Expected result of Divide should be {expectedDivide} But it was: {resultOfDivide}");
         }
@@ -21,10 +21,10 @@ namespace Calculadora01.Test
         public void VerifyDivideOfNegativeNumbers()
         {
             var expectedDivide = 5;
-            var firstNumber = -10;
-            var secondNumber = -2;
+            var number1 = -10;
+            var number2 = -2;
 
-            var resultOfDivide = new Divide(firstNumber, secondNumber).Perform();
+            var resultOfDivide = new Divide(number1, number2).Perform();
 
             Assert.AreEqual(expectedDivide, resultOfDivide, $"The Expected result of Divide should be {expectedDivide} But it was: {resultOfDivide}");
         }
@@ -33,10 +33,10 @@ namespace Calculadora01.Test
         public void VerifyDivideOfNegativeAndPositiveNumbers()
         {
             var expectedDivide = -5;
-            var firstNumber = 10;
-            var secondNumber = -2;
+            var number1 = 10;
+            var number2 = -2;
 
-            var resultOfDivide = new Divide(firstNumber, secondNumber).Perform();
+            var resultOfDivide = new Divide(number1, number2).Perform();
 
             Assert.AreEqual(expectedDivide, resultOfDivide, $"The Expected result of Divide should be {expectedDivide} But it was: {resultOfDivide}");
         }

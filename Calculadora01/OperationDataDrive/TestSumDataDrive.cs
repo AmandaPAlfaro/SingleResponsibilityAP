@@ -27,10 +27,10 @@ namespace Calculadora01.OperationDataDrive
 
         [TestMethod]
         [DynamicData(nameof(AdditionData))]
-        public void VerifySumOfTwoIntegerNumber(int firstNumber, int secondNumber, int expectedSum)
+        public void VerifySumOfTwoIntegerNumber(int number1, int number2, int expectedSum)
         {
 
-            var resultOfSum = new Sum(firstNumber, secondNumber).Perform();
+            var resultOfSum = new Sum(number1, number2).Perform();
             Assert.AreEqual(expectedSum, resultOfSum, $"The Expected result of SumTest should be {expectedSum} But it was: {resultOfSum}");
         }
     }

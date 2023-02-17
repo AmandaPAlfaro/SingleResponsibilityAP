@@ -27,10 +27,10 @@ namespace Calculadora01.OperationDataDrive
 
         [TestMethod]
         [DynamicData(nameof(AdditionData))]
-        public void VerifyMultiplyOfTwoIntegerNumber(int firstNumber, int secondNumber, int expectedMultiply)
+        public void VerifyMultiplyOfTwoIntegerNumber(int number1, int number2, int expectedMultiply)
         {
 
-            var resultOfMultiply = new Multiply(firstNumber, secondNumber).Perform();
+            var resultOfMultiply = new Multiply(number1, number2).Perform();
             Assert.AreEqual(expectedMultiply, resultOfMultiply, $"The Expected result of MultiplyTest should be {expectedMultiply} But it was: {resultOfMultiply}");
         }
     }

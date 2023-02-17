@@ -9,10 +9,10 @@ namespace Calculadora01.Test
         public void VerifySumOfPositiveNumbers()
         {
             var expectedSum = 3;
-            var firstNumber = 1;
-            var secondNumber = 2;
+            var number1 = 1;
+            var number2 = 2;
 
-            var resultOfSum = new Sum(firstNumber, secondNumber).Perform();
+            var resultOfSum = new Sum(number1, number2).Perform();
 
             Assert.AreEqual(expectedSum, resultOfSum, $"The Expected result of Sum should be {expectedSum} But it was: {resultOfSum}");
         }
@@ -21,10 +21,10 @@ namespace Calculadora01.Test
         public void VerifySumOfNegativeNumbers()
         {
             var expectedSum = -3;
-            var firstNumber = -1;
-            var secondNumber = -2;
+            var number1 = -1;
+            var number2 = -2;
 
-            var resultOfSum = new Sum(firstNumber, secondNumber).Perform();
+            var resultOfSum = new Sum(number1, number2).Perform();
 
             Assert.AreEqual(expectedSum, resultOfSum, $"The Expected result of Sum should be {expectedSum} But it was: {resultOfSum}");
         }
@@ -33,11 +33,11 @@ namespace Calculadora01.Test
         public void VerifyUndoOfSumOfPositiveNumbers()
         {
             var expectedSum = 3;
-            var firstNumber = 1;
+            var number1 = 1;
             var expectedUndo = 1;
-            var secondNumber = 2;
+            var number2 = 2;
 
-            var sumToTest = new Sum(firstNumber, secondNumber);
+            var sumToTest = new Sum(number1, number2);
             var resultOfSum = sumToTest.Perform();
             var resultOfUndo = sumToTest.Undo();
 

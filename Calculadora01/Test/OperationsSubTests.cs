@@ -8,10 +8,10 @@ namespace Calculadora01.Test
         public void VerifySubstractOfPositiveNumbers()
         {
             var expectedSubstract = 2;
-            var firstNumber = 4;
-            var secondNumber = 2;
+            var number1 = 4;
+            var number2 = 2;
 
-            var resultOfSubstract = new Substract(firstNumber, secondNumber).Perform();
+            var resultOfSubstract = new Substract(number1, number2).Perform();
 
             Assert.AreEqual(expectedSubstract, resultOfSubstract, $"The Expected result of Substract should be {expectedSubstract} But it was: {resultOfSubstract}");
         }
@@ -20,10 +20,10 @@ namespace Calculadora01.Test
         public void VerifySubstractOfNegativeNumbers()
         {
             var expectedSubstract = -2;
-            var firstNumber = -4;
-            var secondNumber = -2;
+            var number1 = -4;
+            var number2 = -2;
 
-            var resultOfSubstract = new Substract(firstNumber, secondNumber).Perform();
+            var resultOfSubstract = new Substract(number1, number2).Perform();
 
             Assert.AreEqual(expectedSubstract, resultOfSubstract, $"The Expected result of Substract should be {expectedSubstract} But it was: {resultOfSubstract}");
         }
@@ -33,10 +33,10 @@ namespace Calculadora01.Test
         {
             var expectedSubstract = 6;
             var expectedUndo = 6;
-            var firstNumber = 8;
-            var secondNumber = 2;
+            var number1 = 8;
+            var number2 = 2;
 
-            var substractToTest = new Substract(firstNumber, secondNumber);
+            var substractToTest = new Substract(number1, number2);
             var resultOfSubstract = substractToTest.Perform();
             var resultOfUndo = substractToTest.Undo();
 

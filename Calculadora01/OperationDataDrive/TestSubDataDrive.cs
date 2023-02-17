@@ -27,10 +27,10 @@ namespace Calculadora01.OperationDataDrive
 
         [TestMethod]
         [DynamicData(nameof(AdditionData))]
-        public void VerifySubstractOfTwoIntegerNumber(int firstNumber, int secondNumber, int expectedSub)
+        public void VerifySubstractOfTwoIntegerNumber(int number1, int number2, int expectedSub)
         {
 
-            var resultOfSub = new Substract(firstNumber, secondNumber).Perform();
+            var resultOfSub = new Substract(number1, number2).Perform();
             Assert.AreEqual(expectedSub, resultOfSub, $"The Expected result of SubTest should be {expectedSub} But it was: {resultOfSub}");
         }
     }
