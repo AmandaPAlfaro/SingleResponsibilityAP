@@ -6,7 +6,7 @@ namespace Calculadora01.OperationDataDrive
     [TestClass]
     public class TestMultiplyDataDrive
     {
-        public static IEnumerable<object[]> AdditionData
+        public static IEnumerable<object[]> MultiplyData
         {
             get
             {
@@ -26,7 +26,7 @@ namespace Calculadora01.OperationDataDrive
         }
 
         [TestMethod]
-        [DynamicData(nameof(AdditionData))]
+        [DynamicData(nameof(MultiplyData))]
         public void VerifyMultiplyOfTwoIntegerNumber(int number1, int number2, int expectedMultiply)
         {
 

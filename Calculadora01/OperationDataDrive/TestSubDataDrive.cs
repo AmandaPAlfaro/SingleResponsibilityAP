@@ -6,7 +6,7 @@ namespace Calculadora01.OperationDataDrive
     [TestClass]
     public class TestSubDataDrive
     {
-        public static IEnumerable<object[]> AdditionData
+        public static IEnumerable<object[]> SubstractionData
         {
             get
             {
@@ -26,7 +26,7 @@ namespace Calculadora01.OperationDataDrive
         }
 
         [TestMethod]
-        [DynamicData(nameof(AdditionData))]
+        [DynamicData(nameof(SubstractionData))]
         public void VerifySubstractOfTwoIntegerNumber(int number1, int number2, int expectedSub)
         {
 

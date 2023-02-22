@@ -6,7 +6,7 @@ namespace Calculadora01.OperationDataDrive
     [TestClass]
     public class TestDivideDataDriver
     {
-        public static IEnumerable<object[]> AdditionData
+        public static IEnumerable<object[]> DivideData
         {
             get
             {
@@ -21,7 +21,7 @@ namespace Calculadora01.OperationDataDrive
         }
 
         [TestMethod]
-        [DynamicData(nameof(AdditionData))]
+        [DynamicData(nameof(DivideData))]
         public void VerifyDivideOfTwoIntegerNumber(int number1, int number2, int expectedDivide)
         {
 
