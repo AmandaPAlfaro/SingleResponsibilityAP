@@ -1,44 +1,26 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Calculadora01.Utils;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace Calculadora01.Test
 {
     [TestClass]
     public class OperationsDivideTests
     {
-        [TestMethod]
-        public void VerifyDivideOfPositiveNumbers()
+        public static IEnumerable<object[]> DivideData
         {
-            var expectedDivide = 5;
-            var number1 = 10;
-            var number2 = 2;
-
-            var resultOfDivide = new Divide(number1, number2).Perform();
-
-            Assert.AreEqual(expectedDivide, resultOfDivide, $"The Expected result of Divide should be {expectedDivide} But it was: {resultOfDivide}");
+            get
+            {
+                return OperationDivide.GetDivideData();
+            }
         }
 
         [TestMethod]
-        public void VerifyDivideOfNegativeNumbers()
+        [DynamicData(nameof(DivideData))]
+        public void VerifySumOfTwoIntegerNumbers(int id, string firstNumber, string secondNumber, string expectedSum)
         {
-            var expectedDivide = 5;
-            var number1 = -10;
-            var number2 = -2;
-
-            var resultOfDivide = new Divide(number1, number2).Perform();
-
-            Assert.AreEqual(expectedDivide, resultOfDivide, $"The Expected result of Divide should be {expectedDivide} But it was: {resultOfDivide}");
-        }
-
-        [TestMethod]
-        public void VerifyDivideOfNegativeAndPositiveNumbers()
-        {
-            var expectedDivide = -5;
-            var number1 = 10;
-            var number2 = -2;
-
-            var resultOfDivide = new Divide(number1, number2).Perform();
-
-            Assert.AreEqual(expectedDivide, resultOfDivide, $"The Expected result of Divide should be {expectedDivide} But it was: {resultOfDivide}");
+            var resultOfSum = new Sum(int.Parse(firstNumber), int.Parse(secondNumber)).Perform();
+            Assert.AreEqual(int.Parse(expectedSum), resultOfSum, $"The Expected result of Sum should be {expectedSum} But it was: {resultOfSum}");
         }
 
         [TestMethod]

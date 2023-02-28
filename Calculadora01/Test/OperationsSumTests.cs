@@ -1,32 +1,26 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Calculadora.Utils;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace Calculadora01.Test
 {
     [TestClass]
     public class OperationTests
     {
-        [TestMethod]
-        public void VerifySumOfPositiveNumbers()
+        public static IEnumerable<object[]> AdditionData
         {
-            var expectedSum = 3;
-            var number1 = 1;
-            var number2 = 2;
-
-            var resultOfSum = new Sum(number1, number2).Perform();
-
-            Assert.AreEqual(expectedSum, resultOfSum, $"The Expected result of Sum should be {expectedSum} But it was: {resultOfSum}");
+            get
+            {
+                return OperationSum.GetAdditionData();
+            }
         }
 
         [TestMethod]
-        public void VerifySumOfNegativeNumbers()
+        [DynamicData(nameof(AdditionData))]
+        public void VerifySumOfTwoIntegerNumbers(int id, string firstNumber, string secondNumber, string expectedSum)
         {
-            var expectedSum = -3;
-            var number1 = -1;
-            var number2 = -2;
-
-            var resultOfSum = new Sum(number1, number2).Perform();
-
-            Assert.AreEqual(expectedSum, resultOfSum, $"The Expected result of Sum should be {expectedSum} But it was: {resultOfSum}");
+            var resultOfSum = new Sum(int.Parse(firstNumber), int.Parse(secondNumber)).Perform();
+            Assert.AreEqual(int.Parse(expectedSum), resultOfSum, $"The Expected result of Sum should be {expectedSum} But it was: {resultOfSum}");
         }
 
         [TestMethod]

@@ -1,32 +1,26 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Calculadora01.Utils;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace Calculadora01.Test
 {
     [TestClass]
     public class OperationsMultiplyTests
     {
-        [TestMethod]
-        public void VerifyMultiplyOfPositiveNumbers()
+        public static IEnumerable<object[]> MultiplyData
         {
-            var expectedMultiply = 2;
-            var number1 = 1;
-            var number2 = 2;
-
-            var resultOfMultiply = new Multiply(number1, number2).Perform();
-
-            Assert.AreEqual(expectedMultiply, resultOfMultiply, $"The Expected result of Multiply should be {expectedMultiply} But it was: {resultOfMultiply}");
+            get
+            {
+                return OperationMultiplication.GetMultiplicationData();
+            }
         }
 
         [TestMethod]
-        public void VerifyMultiplyOfNegativeNumbers()
+        [DynamicData(nameof(MultiplyData))]
+        public void VerifySumOfTwoIntegerNumbers(int id, string firstNumber, string secondNumber, string expectedSum)
         {
-            var expectedMultiply = 2;
-            var firstNumber = -1;
-            var number2 = -2;
-
-            var resultOfMultiply = new Multiply(firstNumber, number2).Perform();
-
-            Assert.AreEqual(expectedMultiply, resultOfMultiply, $"The Expected result of Multiply should be {expectedMultiply} But it was: {resultOfMultiply}");
+            var resultOfSum = new Sum(int.Parse(firstNumber), int.Parse(secondNumber)).Perform();
+            Assert.AreEqual(int.Parse(expectedSum), resultOfSum, $"The Expected result of Sum should be {expectedSum} But it was: {resultOfSum}");
         }
 
         [TestMethod]
