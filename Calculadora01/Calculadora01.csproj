@@ -118,7 +118,10 @@
     <Compile Include="Test\OperationsSubTests.cs" />
     <Compile Include="Test\OperationsSumTests.cs" />
     <Compile Include="Test\OperationTestDB.cs" />
-    <Compile Include="Utils\OperationHelper.cs" />
+    <Compile Include="Utils\OperationDivide.cs" />
+    <Compile Include="Utils\OperationMultiplication.cs" />
+    <Compile Include="Utils\OperationSubstract.cs" />
+    <Compile Include="Utils\OperationSum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

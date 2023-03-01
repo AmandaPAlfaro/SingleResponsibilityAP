@@ -17,10 +17,10 @@ namespace Calculadora01.Test
 
         [TestMethod]
         [DynamicData(nameof(MultiplyData))]
-        public void VerifySumOfTwoIntegerNumbers(int id, string firstNumber, string secondNumber, string expectedSum)
+        public void VerifyMultiplicationOfTwoIntegerNumbers(int id, string firstNumber, string secondNumber, string expectedSum)
         {
-            var resultOfSum = new Sum(int.Parse(firstNumber), int.Parse(secondNumber)).Perform();
-            Assert.AreEqual(int.Parse(expectedSum), resultOfSum, $"The Expected result of Sum should be {expectedSum} But it was: {resultOfSum}");
+            var resultOfSum = new Multiply(int.Parse(firstNumber), int.Parse(secondNumber)).Perform();
+            Assert.AreEqual(int.Parse(expectedSum), resultOfSum, $"The Expected result of Multiplication should be {expectedSum} But it was: {resultOfSum}");
         }
 
         [TestMethod]
